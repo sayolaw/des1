@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.App{
+  height:100vh;
+  width:100vw;
+  overflow-x: hidden;
+  /* background: url('../public/bk1.jpg'); */
+  background-size: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header ul li a{
+  text-decoration: none;
+  color:white;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  font-size: 8em;
+  letter-spacing: 8px;
+  color:white;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  position: absolute;
+  left:-100px;
+  text-orientation: sideways-right;
+ 
+  transition: opacity 2s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header ul li a:hover{
+  border-bottom: 2px solid white;
 }
-
-.App-link {
-  color: #61dafb;
+.credits{
+  
+  color:white;
+  position: relative;
+  top:25%;
+  left:15vw;
 }
+.credits h4{
+ 
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-left: 14px;
+  margin-bottom: 10px;
+}
+.credits pre{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.details{
+  color:white;
+  position: relative;
+  left:60vw;
+}
+.details h4{
+  padding-left: 0px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: -14px;
+ 
+ 
+}
+.details .styleButton{
+  height:55px;
+  background-color: rgba(255, 255, 255, 0.3);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+  cursor: pointer;
+  
+}
+.details .myPrice{
+  font-size:30px;
+  font-weight:600;
+}
+.details .bidButton{
+  height:55px;
+  background-color: rgba(4, 4, 4, 0.3);
+ 
+  cursor: pointer;
+  
+}
+.details .bidButton:hover{
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+.details .styleButton:hover{
+  color:black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.pictureSlide{
+
+  height:70px;
+  position: absolute;
+  top:75vh;
+  left:calc(60vw - 15vw);
+  color:white;
+  width:240px;
+}
+.pictureSlide .pictures{
+  cursor: pointer;
+  height:65px;
+  width:120px;
+  background-size: cover;
+}
+.pictureSlide .pictures .block{
+  width: 120px;
+  height: 65px;
+  background-color: white;
+  opacity: 0;
+}
+.pictureSlide .pictures .block:hover{
+  opacity: 0.3;
+}
+.example-enter{
+  opacity: 0.01;
+}
+.example-enter .example-enter-active{
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.example-leave{
+  opacity:1
+}
+.example-leave.example-leave-active{
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+.my-fade{
+  opacity: 1;
+}
+.fade-in{
+  opacity: 0.1;
 }
